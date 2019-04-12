@@ -1,7 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebForm.SiteMaster" %>
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -37,27 +35,24 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-            <asp:ContentPlaceHolder ID="Script" runat="server">
-            </asp:ContentPlaceHolder>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">アプリケーション名</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">ホーム</a></li>
-                        <li><a runat="server" href="~/About">詳細</a></li>
-                        <li><a runat="server" href="~/Contact">問い合わせ</a></li>
-                    </ul>
-                </div>
+        <asp:ContentPlaceHolder ID="Script" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" runat="server" href="~/">アプリケーション名</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" runat="server" href="~/">ホーム</a></li>
+                <li class="nav-item"><a class="nav-link" runat="server" href="~/About">詳細</a></li>
+                <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">問い合わせ</a></li>
+            </ul>
             </div>
-        </div>
+        </nav>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
