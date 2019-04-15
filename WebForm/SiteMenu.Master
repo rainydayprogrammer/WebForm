@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebForm.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMenu.master.cs" Inherits="WebForm.SiteMenu" %>
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -43,16 +43,25 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/">ホーム</a></li>
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/About">詳細</a></li>
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">問い合わせ</a></li>
-            </ul>
+                <asp:Menu ID="mainmenu" DataSourceID="SiteMapDataSource1"
+                    runat="server" 
+                    Orientation="Horizontal" 
+                    StaticDisplayLevels="2"
+                    StaticEnableDefaultPopOutImage="False"
+                    MaximumDynamicDisplayLevels="10" 
+                    EnableViewState="false"
+                    StaticMenuStyle-CssClass="navbar-nav mr-auto" 
+                    StaticSelectedStyle-CssClass="active"
+                    DynamicMenuStyle-CssClass="dropdown-menu" 
+                    IncludeStyleBlock="false" 
+                    SkipLinkText=""
+                    RenderingMode="List"
+                    StaticMenuItemStyle-CssClass="nav-link" DynamicMenuItemStyle-CssClass="dropdown-item">
+                </asp:Menu>
             </div>
         </nav>
-
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default" title="Home"  description="">
+      <siteMapNode url="~/Test/index" title="テスト用">
+        <siteMapNode url="~/Test/PageSearch" title="ページ内検索" description="" />
+      </siteMapNode>
+      <siteMapNode url="~/MenuDemo" title="Menuデモ"  description="メニューコントロールを使ったバージョン">
+        <siteMapNode url="~/Modules/Products/whatsnew" title="新商品のご紹介" />
+        <siteMapNode url="~/Modules/Products/popular" title="今売れています" />
+        <siteMapNode url="~/Modules/Products/bargain" title="お買い得品" />
+        <siteMapNode url="~/Modules/Products/category" title="カテゴリー">
+          <siteMapNode url="/modules/product/category/pc" title="パソコン">
+            <siteMapNode url="/modules/product/category/pc/hp" title="HP">
+              <siteMapNode url="/modules/product/category/pc/hp/typea" title="TYPE A">
+                <siteMapNode url="/modules/product/category/pc/hp/typea/sizes" title="SIZE S" />
+                <siteMapNode url="/modules/product/category/pc/hp/typea/sizem" title="SIZE M" />
+                <siteMapNode url="/modules/product/category/pc/hp/typea/sizel" title="SIZE L">
+                  <siteMapNode url="/modules/product/category/pc/hp/typea/sizel/red" title="暖色系">
+                    <siteMapNode url="/modules/product/category/pc/hp/typea/sizel/red/orange" title="オレンジ" />
+                  <siteMapNode url="/modules/product/category/pc/hp/typea/sizel/red/pink" title="ピンク" />
+                  </siteMapNode>
+                <siteMapNode url="/modules/product/category/pc/hp/typea/sizel/white" title="白" />
+                <siteMapNode url="/modules/product/category/pc/hp/typea/sizel/black" title="黒" />
+                </siteMapNode>
+              </siteMapNode>
+              <siteMapNode url="/modules/product/category/pc/hp/typeb" title="TYPE B" />
+            </siteMapNode>
+              <siteMapNode url="/modules/product/category/pc/dell" title="DELL" />
+              <siteMapNode url="/modules/product/category/pc/apple" title="Apple" />
+          </siteMapNode>
+          <siteMapNode url="/modules/product/category/tablet" title="タブレット" />
+          <siteMapNode url="/modules/product/category/phone" title="スマートフォン" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/about" title="会社案内"  description="" />
+      <siteMapNode url="~/Contact" title="お問い合わせ"  description="" />
+    </siteMapNode>
+</siteMap>
