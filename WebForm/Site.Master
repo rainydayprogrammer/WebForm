@@ -39,17 +39,13 @@
         </asp:ContentPlaceHolder>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" runat="server" href="~/">テスト用</a>
+            <a class="navbar-brand" runat="server" href="~/">テスト用プロジェクト</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/">ホーム</a></li>
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/About">詳細</a></li>
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">問い合わせ</a></li>
-            </ul>
+                <asp:Label ID="LabMenu" runat="server" Text=""></asp:Label>
             </div>
         </nav>
 
