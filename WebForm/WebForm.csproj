@@ -180,6 +180,7 @@
     <Content Include="Site.Master" />
     <Content Include="SiteMenu.Master" />
     <Content Include="Test\PageSearch.aspx" />
+    <Content Include="Test\SearchBox.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -251,6 +252,13 @@
     </Compile>
     <Compile Include="Test\PageSearch.aspx.designer.cs">
       <DependentUpon>PageSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\SearchBox.aspx.cs">
+      <DependentUpon>SearchBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\SearchBox.aspx.designer.cs">
+      <DependentUpon>SearchBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utils\HtmlUtil.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">

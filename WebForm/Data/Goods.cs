@@ -33,7 +33,8 @@ namespace WebForm.Data
                 new Goods{Id = "G001", Name = "みかん", CategoryId = "C001", Price = 200},
                 new Goods{Id = "G002", Name = "バナナ", CategoryId = "C001", Price = 100},
                 new Goods{Id = "G003", Name = "トマト", CategoryId = "C002", Price = 200},
-                new Goods{Id = "G004", Name = "キュウリ", CategoryId = "C002", Price = 180}
+                new Goods{Id = "G004", Name = "キュウリ", CategoryId = "C002", Price = 180},
+                new Goods{Id = "G005", Name = "りんご", CategoryId = "C001", Price = 100}
             };
         }
     }

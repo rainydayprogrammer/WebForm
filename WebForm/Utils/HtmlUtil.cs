@@ -9,7 +9,13 @@ namespace WebForm.Utils
     {
         public static string TextSearchLink(string targetString)
         {
-            return "<a href='#' onclick=\"highlightKeyword('" + targetString + "');\"> " + targetString + "</a>";
+            return String.Format(@"<a href='#' onclick=""highlightKeyword('{0}');"">{0}</a>", targetString);
+        }
+
+        public static string TextHighlight(string orgString, string keyWord)
+        {
+            string repstr = string.Format(@"<span class=""bg-warning"">{0}</span>", keyWord);
+            return orgString.Replace(keyWord, repstr);
         }
     }
 }

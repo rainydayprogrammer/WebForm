@@ -3,6 +3,7 @@
     <siteMapNode url="~/Default" title="Home"  description="">
       <siteMapNode url="~/Test/index" title="テスト">
         <siteMapNode url="~/Test/PageSearch" title="ページ内検索" description="" />
+        <siteMapNode url="~/test/SearchBox" title="検索BOX"/>
         <siteMapNode url="~/MenuDemo" title="Menuコントロール"  description="メニューコントロールを使ったバージョン">
           <siteMapNode url="~/Modules/Products/whatsnew" title="新商品のご紹介" />
           <siteMapNode url="~/Modules/Products/popular" title="今売れています" />
